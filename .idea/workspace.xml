@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfbbe909-6ca6-4cb8-a1a3-b810480c1834" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/axr/helpers.rb" afterPath="$PROJECT_DIR$/lib/axr/helpers.rb" />
     </list>
     <ignored path="ajaxful_rating_jquery.iws" />
@@ -47,7 +48,7 @@
       <file leaf-file-name="helpers.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/axr/helpers.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="16" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.32820514">
+            <state line="43" column="34" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.63589746">
               <folding />
             </state>
           </provider>
@@ -263,6 +264,9 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeJavaFiles" value="false" />
+  </component>
   <component name="RunManager">
     <list size="0" />
   </component>
@@ -372,7 +376,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/axr/helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="16" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.32820514">
+        <state line="43" column="34" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.63589746">
           <folding />
         </state>
       </provider>

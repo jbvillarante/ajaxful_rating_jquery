@@ -34,14 +34,14 @@ module AjaxfulRating # :nodoc:
           $.ajax({
             type: $(this).attr('data-method'),
             url: $(this).attr('href'),
+            dataType: "json",
             data: {
                     stars: $(this).attr('data-stars'),
                     dimension: $(this).attr('data-dimension'),
                     size: $(this).attr('data-size'),
                     show_user_rating: $(this).attr('data-show_user_rating')
                   },
-            success: function(response){
-              var data = $.parseJSON(response);
+            success: function(data){
               $('#' + data.id + ' .show-value').css('width', data.width + '%');
             }
           });
