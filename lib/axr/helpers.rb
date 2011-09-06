@@ -30,25 +30,24 @@ module AjaxfulRating # :nodoc:
         #{authenticity_script}
 
         $(document).ready(function(){
-          $('.ajaxful-rating a').click(function(){
-            $.ajax({
-              type: $(this).attr('data-method'),
-              url: $(this).attr('href'),
-              data: {
-                      stars: $(this).attr('data-stars'),
-                      dimension: $(this).attr('data-dimension'),
-                      size: $(this).attr('data-size'),
-                      show_user_rating: $(this).attr('data-show_user_rating')
-                    },
-              success: function(response){
-                console.log('hello');
-                console.log(response.id);
-                $('#' + response.id + ' .show-value').css('width', response.width + '%');
-              }
-            });
-            return false;
+        $('.ajaxful-rating a').click(function(){
+          $.ajax({
+            type: $(this).attr('data-method'),
+            url: $(this).attr('href'),
+            data: {
+                    stars: $(this).attr('data-stars'),
+                    dimension: $(this).attr('data-dimension'),
+                    size: $(this).attr('data-size'),
+                    show_user_rating: $(this).attr('data-show_user_rating')
+                  },
+            success: function(response){
+              var data = $.parseJSON(response);
+              $('#' + data.id + ' .show-value').css('width', data.width + '%');
+            }
           });
+          return false;
         });
+      });
       </script>}.html_safe
     end
     
