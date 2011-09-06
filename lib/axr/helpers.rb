@@ -41,6 +41,8 @@ module AjaxfulRating # :nodoc:
                       show_user_rating: $(this).attr('data-show_user_rating')
                     },
               success: function(response){
+                console.log('hello');
+                console.log(response.id);
                 $('#' + response.id + ' .show-value').css('width', response.width + '%');
               }
             });
